@@ -3,7 +3,8 @@
   [[https://www.gnu.org/licenses/gpl-3.0][https://img.shields.io/badge/License-GPLv3-blue.svg]]
 ** Introduction
   This package is a [[https://github.com/magit/transient][transient]] extension, which use [[https://github.com/tumashu/posframe][posframe]] to show
-  transient popups. This package is inspired by [[https://github.com/tumashu/ivy-posframe][ivy-posframe]].
+  transient popups. This package is inspired by [[https://github.com/tumashu/ivy-posframe][ivy-posframe]]. I mainly
+  use this package for displaying magit transient popups.
 ** Table of Contents                                                  :TOC_3_org:
 - [[Transient-posframe][Transient-posframe]]
   - [[Introduction][Introduction]]
