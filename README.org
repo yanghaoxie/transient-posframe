@@ -7,16 +7,16 @@
   use this package for displaying magit transient popups.
 
   [[./screenshots/transient-posframe.gif]]
-** Table of Contents                                                  :TOC_3_org:
-- [[Transient-posframe][Transient-posframe]]
-  - [[Introduction][Introduction]]
-  - [[Install][Install]]
-    - [[Use package][Use package]]
-  - [[Customization][Customization]]
-    - [[Customization options][Customization options]]
-  - [[Notes][Notes]]
-    - [[Function ~transient-posframe--show-buffer~ is not compatible with ~transient-display-buffer-action~][Function ~transient-posframe--show-buffer~ is not compatible with ~transient-display-buffer-action~]]
-  - [[License][License]]
+** Table of Contents                                                  :TOC_3:
+- [[#transient-posframe][Transient-posframe]]
+  - [[#introduction][Introduction]]
+  - [[#install][Install]]
+    - [[#use-package][Use package]]
+  - [[#customization][Customization]]
+    - [[#customization-options][Customization options]]
+  - [[#notes][Notes]]
+    - [[#function-transient-posframe--show-buffer-is-not-compatible-with-transient-display-buffer-action][Function ~transient-posframe--show-buffer~ is not compatible with ~transient-display-buffer-action~]]
+  - [[#license][License]]
 
 ** Install
 *** Use package
