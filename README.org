@@ -1,0 +1,73 @@
+#+AUTHOR: Yanghao Xie
+* Transient-posframe
+  [[https://www.gnu.org/licenses/gpl-3.0][https://img.shields.io/badge/License-GPLv3-blue.svg]]
+** Introduction
+  This package is a [[https://github.com/magit/transient][transient]] extension, which use [[https://github.com/tumashu/posframe][posframe]] to show
+  transient popups. This package is inspired by [[https://github.com/tumashu/ivy-posframe][ivy-posframe]].
+** Table of Contents                                                  :TOC_3_org:
+- [[Transient-posframe][Transient-posframe]]
+  - [[Introduction][Introduction]]
+  - [[Install][Install]]
+    - [[Use package][Use package]]
+  - [[Customization][Customization]]
+    - [[Customization options][Customization options]]
+  - [[Notes][Notes]]
+    - [[Function ~transient-posframe--show-buffer~ is not compatible with ~transient-display-buffer-action~][Function ~transient-posframe--show-buffer~ is not compatible with ~transient-display-buffer-action~]]
+  - [[License][License]]
+
+** Install
+*** Use package
+#+BEGIN_SRC emacs-lisp :tangle yes
+  (use-package
+    :load-path "path/to/transient-posframe.el"
+    :config
+    (transient-posframe-mode))
+#+END_SRC
+** Customization
+   You can customize the appearance of the posframe, the options are
+   derived directly from [[https://github.com/tumashu/posframe][posframe]].
+*** Customization options
+**** ~transient-posframe-font (default nil)~ 
+     - Font used in the transient posframe. When nil, Using current
+       frame's font as fallback.
+**** ~transient-posframe-poshandler (default posframe-poshandler-frame-center)~
+     - Customize this option to change the position of the transient
+       popups. Refer [[https://github.com/tumashu/posframe][posframe]]
+       for more predefined positions.
+**** ~transient-posframe-min-width (default 80)~
+     - Minimum width of the posframe.
+     - Note that at this moment transient-posframe cannot adjust the
+       posframe's size automagically, therefore, we use
+       ~transient-posframe-min-width~ and
+       ~transient-posframe-min-height~ to adjust the size of the
+       posframe manually.
+**** ~transient-posframe-min-height (default 30)~
+     - Minimum height of the posframe.
+     - Note that at this moment transient-posframe cannot adjust the
+       posframe's size automagically, therefore, we use
+       ~transient-posframe-min-width~ and
+       ~transient-posframe-min-height~ to adjust the size of the
+       posframe manually.
+**** ~transient-posframe-border-width (default 1)~
+     - The border of the posframe.
+**** ~transient-posframe-parameters (default nil)~
+     - The parameters passed to posframe, refer
+       [[https://github.com/tumashu/posframe][posframe]] for more
+       information.
+** Notes
+*** Function ~transient-posframe--show-buffer~ is not compatible with ~transient-display-buffer-action~
+   - We set function ~transient-display-buffer-action~ to
+     ~transient-posframe--show-buffer~. According to the
+     document of ~transient-display-buffer-action~:
+     #+begin_quote
+     ...  The value of this option has the form (FUNCTION . ALIST),
+     where FUNCTION is a function or a list of functions.  Each such
+     function should accept two arguments: a buffer to display and an
+     alist of the same form as ALIST.  See `display-buffer' for
+     details.
+     #+end_quote
+     However, function ~transient-posframe--show-buffer~ does not
+     deal with the second argument ~ALIST~. I have not figured out how
+     to tackle with this yet.
+** License
+   Transient-posframe is licensed under the [[./LICENSE ][GPLv3]] License.
