@@ -5,6 +5,8 @@
   This package is a [[https://github.com/magit/transient][transient]] extension, which use [[https://github.com/tumashu/posframe][posframe]] to show
   transient popups. This package is inspired by [[https://github.com/tumashu/ivy-posframe][ivy-posframe]]. I mainly
   use this package for displaying magit transient popups.
+
+  [[./screenshots/transient-posframe.gif]]
 ** Table of Contents                                                  :TOC_3_org:
 - [[Transient-posframe][Transient-posframe]]
   - [[Introduction][Introduction]]
