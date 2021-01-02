@@ -81,8 +81,8 @@ When 0, no border is showed."
 (defvar transient-posframe-display-buffer-action--previous nil
   "The previous value of `transient-display-buffer-action'.")
 
-(defun transient-posframe--show-buffer (buffer alist)
-  "Show BUFFER in posframe and we do not use ALIST at this period."
+(defun transient-posframe--show-buffer (buffer _alist)
+  "Show BUFFER in posframe and we do not use _ALIST at this period."
   (when (posframe-workable-p)
     (let* ((posframe
 	    (posframe-show buffer
