@@ -1,5 +1,6 @@
 #+AUTHOR: Yanghao Xie
 * Transient-posframe
+  [[https://melpa.org/#/transient-posframe][file:https://melpa.org/packages/transient-posframe-badge.svg]]
   [[https://www.gnu.org/licenses/gpl-3.0][https://img.shields.io/badge/License-GPLv3-blue.svg]]
 ** Introduction
   This package is a [[https://github.com/magit/transient][transient]] extension, which use [[https://github.com/tumashu/posframe][posframe]] to show
